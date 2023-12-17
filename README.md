@@ -26,6 +26,7 @@ $ gcloud app deploy
 ## TODO
 - [x] 最低限のTypescript化
 - [x] 複数サービスへの分割
+- [x] サービス間の通信（axios入れただけ）
 - [ ] [app.yamlのカスタム](https://cloud.google.com/appengine/docs/standard/reference/app-yaml?hl=ja&tab=node.js)
 - [ ] [dispatch](https://cloud.google.com/appengine/docs/standard/reference/dispatch-yaml?hl=ja&tab=node.js)
 - [ ] [cron](https://cloud.google.com/appengine/docs/standard/scheduling-jobs-with-cron-yaml?hl=ja)

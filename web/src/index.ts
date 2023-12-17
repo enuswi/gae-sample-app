@@ -1,11 +1,16 @@
 import path from 'path';
 import express from 'express';
+import axios from 'axios';
+import 'dotenv/config'
 const app: express.Express = express();
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-app.get('/', (req: express.Request, res: express.Response) => {
+app.get('/', async (req: express.Request, res: express.Response) => {
+  // とりあえず受け取るだけ
+  const apiResponse = await axios.get(process.env.API_URL);
+  console.log(apiResponse)
   res.send('Hello from App Engine!');
 });
 
