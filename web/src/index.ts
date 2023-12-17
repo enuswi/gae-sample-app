@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended: true}));
 app.get('/', async (req: express.Request, res: express.Response) => {
   // とりあえず受け取るだけ
   const apiResponse = await axios.get(process.env.API_URL);
-  console.log(apiResponse)
+  console.log(apiResponse.data)
   res.send('Hello from App Engine!');
 });
 

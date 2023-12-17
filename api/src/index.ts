@@ -8,7 +8,7 @@ app.get('/', (req: express.Request, res: express.Response) => {
   res.send(JSON.stringify({
     oya: 2000,
     ko: 1000
-  }))
+  }));
 });
 
 const PORT = process.env.PORT;
