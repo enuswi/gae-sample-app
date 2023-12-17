@@ -23,12 +23,22 @@ $ npm start
 $ gcloud app deploy
 ```
 
-
 ## TODO
-- [ ] cron
+- [x] 最低限のTypescript化
+- [ ] [dispatch](https://cloud.google.com/appengine/docs/standard/reference/dispatch-yaml?hl=ja&tab=node.js)
+- [ ] [app.yamlのカスタム](https://cloud.google.com/appengine/docs/standard/reference/app-yaml?hl=ja&tab=node.js)
+- [ ] [cron](https://cloud.google.com/appengine/docs/standard/scheduling-jobs-with-cron-yaml?hl=ja)
+- [ ] [firestoreとの連携](https://cloud.google.com/appengine/docs/standard/configuring-datastore-indexes-with-index-yaml?hl=ja&tab=node.js)
+- [ ] [queue処理 ※ NodeJs対象外](https://cloud.google.com/appengine/docs/standard/reference/queueref?hl=ja&tab=go#top)
 - [ ] サービス分割
 - [ ] CI/CD
 - [ ] jest
 - [ ] 認証
 - [ ] データの永続化
 - [ ] logging
+- [ ] カナリアリリース
+
+## App Engineリファレンス
+- [App Engine概要](https://cloud.google.com/appengine/docs/an-overview-of-app-engine?hl=ja#services)
+- [スタンダード環境関連情報](https://cloud.google.com/appengine/docs/standard/resources?hl=ja)
+- [NodeJSチュートリアル](https://cloud.google.com/appengine/docs/standard/nodejs/runtime?hl=ja)
