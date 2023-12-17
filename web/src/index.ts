@@ -10,7 +10,7 @@ app.get('/', (req: express.Request, res: express.Response) => {
 });
 
 app.get('/submit', (req: express.Request, res: express.Response) => {
-  res.sendFile(path.join(__dirname, '../views/form.html'));
+  res.sendFile(path.join(__dirname, '../static/views/form.html'));
 });
 
 app.post('/submit', (req: express.Request, res: express.Response) => {
